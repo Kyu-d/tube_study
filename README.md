@@ -1,7 +1,5 @@
 # tube_study
 
-<<<<<<< HEAD
-=======
 source code block
 
 ```js
@@ -43,5 +41,4 @@ create link
 강조는 다음과 같이 할 수 있음
 
 **치킨** 먹다가 ~~두드러기~~났어요.
->>>>>>> d3f7e3d0b6965d44bfefb19441df0aae45ab2e7d
 >>>>>>> 4d58698... Add console.log(a) [Add]
