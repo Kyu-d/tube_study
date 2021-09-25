@@ -1,4 +1,4 @@
-# tube_study
+## tube_study
 
 source code block
 
@@ -41,4 +41,3 @@ create link
 강조는 다음과 같이 할 수 있음
 
 **치킨** 먹다가 ~~두드러기~~났어요.
->>>>>>> 4d58698... Add console.log(a) [Add]
