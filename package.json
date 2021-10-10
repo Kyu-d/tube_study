@@ -2,15 +2,20 @@
   "name": "tube_study",
   "version": "1.0.0",
   "description": "study_dev",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kyu-d/tube_study.git"
+  },
+  "scripts": {
+    "start": "node index.js"
   },
   "author": "Kyu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kyu-d/tube_study/issues"
   },
-  "homepage": "https://github.com/Kyu-d/tube_study#readme"
+  "homepage": "https://github.com/Kyu-d/tube_study#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
