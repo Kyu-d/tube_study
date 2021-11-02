@@ -7,7 +7,7 @@
     "url": "git+https://github.com/Kyu-d/tube_study.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon --exec babel-node index.js"
   },
   "author": "Kyu",
   "license": "ISC",
@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0"
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "nodemon": "^2.0.14"
   }
 }
