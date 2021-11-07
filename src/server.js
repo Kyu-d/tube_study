@@ -5,9 +5,23 @@ const PORT = 4000;
 
 const app = express();
 
+const handleHome = (req, res) => {
+    return res.send("i love you"); // one of res end method
+};
+
+const handleLogin = (req, res) => {
+    return res.send("you login here");
+};
+
+app.get("/", handleHome);
+
+app.get("/login", handleLogin);
+
 // request <> respon
 
 const handleListening = () => console.log(`Server Listening on port 4000 http://localhost:${PORT}`);
 
 app.listen(PORT, handleListening);
+
+//v_js code
 
