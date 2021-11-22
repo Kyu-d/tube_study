@@ -20,7 +20,7 @@ const privateMiddleware = (req, res, next) => {
         return res.send(`<h1>Not Allowed</h1>`);
     } // "/protected" >> cutting processing 
     console.log(`allowed, you may continue`);
-    next();
+    next(); // middleware's point : next();
 }
 
 const handleHome = (req, res) => {
@@ -36,16 +36,16 @@ const handleProtected = (req, res) => {
     return res.send(`welcome to the private lounge`);
 }
 
-app.use(logger); // important order!! first - use > next - get:url
+// app.use(logger); // important order!! first - use > next - get:url
 // app > req : express => up ~ down loading..... > like a javascript
 // order is very important!
 
-app.use(privateMiddleware);
+// app.use(privateMiddleware);
 
 // app.get("/", gossipMiddleware, handleHome);
 
-app.get("/", handleLogin);
-app.get("/protected", handleProtected);
+app.get("/", logger, handleHome);
+// app.get("/protected", handleProtected);
 
 // request <> respon
 
